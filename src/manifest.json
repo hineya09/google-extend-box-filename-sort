@@ -1,0 +1,17 @@
+{
+  "name": "boxファイル並び替え",
+  "description": "boxのファイル一覧を指定した順にする拡張機能です",
+  "version": "0.2",
+  "manifest_version": 3,
+  "background": {
+   "service_worker": "./background.js"
+  },
+  "permissions": [
+    "storage", // ローカルストレージ
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://app.box.com/*"
+  ]
+}
